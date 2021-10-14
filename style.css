@@ -1,0 +1,26 @@
+:root {
+  --primary: #6b58fd;
+  --accents: #42e9f5;
+  --white: #fff;
+  --fontSize: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-image: url(img/header.jpg);
+  height: 50vh;
+  background-position: bottom;
+  background-size: cover;
+  position: relative;
+}
+h1 {
+  position: absolute;
+  top: 22%;
+  left: 20%;
+  color: var(--white);
+  font-size: 8rem;
+}
