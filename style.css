@@ -5,6 +5,8 @@
   --white: #fff;
   --fontSize: 16px;
   --fontFamily: "Source Sans Pro", sans-serif;
+  --textShadow: 0 0 2px black;
+  --transition: 0.3s ease;
 }
 /* basic styles */
 * {
@@ -17,10 +19,9 @@ body {
   font-size: var(--fontSize);
   line-height: 1.5;
 }
-container {
+.container {
   max-width: 1140px;
   margin: auto;
-  border: 1px solid red;
 }
 /* header */
 header {
@@ -51,5 +52,69 @@ footer {
 footer p {
   color: var(--white);
   font-size: 1.4rem;
-  text-shadow: 0 0 2px black;
+  text-shadow: var(--textShadow);
+}
+/* tabovi */
+.tabovi {
+  padding: 100px 0;
+}
+.linkovi {
+  text-align: center;
+}
+.linkovi a {
+  color: var(--primary);
+  font-size: 2rem;
+  margin: 0 10px;
+  border-bottom: 2px solid var(--primary);
+  text-decoration: none;
+  width: 250px;
+  display: inline-block;
+}
+.linkovi a:hover {
+  color: var(--accents);
+  text-shadow: var(--textShadow);
+  transition: var(--transition);
+  border-bottom: 2px solid var(--accents);
+}
+.prikazi {
+  display: flex;
+  justify-content: space-between;
+}
+.prikazi .col-2 {
+  flex: 0 0 68%;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+.prikazi .col-1 {
+  flex: 0 0 28%;
+  margin-top: 50px;
+}
+.prikazi .col-1 img {
+  width: 100%;
+}
+.prikazi h2 {
+  font-size: 3rem;
+  color: var(--primary);
+}
+.prikazi hr {
+  margin: 20px 0 30px 0;
+  border: none;
+  height: 3px;
+  background: linear-gradient(to left, var(--primary), var(--accents));
+}
+.prikazi button {
+  padding: 15px 40px;
+  background: linear-gradient(to right, var(--primary), var(--accents));
+  border: none;
+  font-size: 1rem;
+  color: var(--white);
+  text-transform: uppercase;
+  margin-top: 30px;
+  text-shadow: var(--textShadow);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.prikazi button:hover {
+  background: linear-gradient(to left, var(--primary), var(--accents));
 }
