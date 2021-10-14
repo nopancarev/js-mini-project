@@ -85,6 +85,7 @@ footer p {
   margin-top: 50px;
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 .prikazi .col-1 {
   flex: 0 0 28%;
