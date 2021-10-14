@@ -17,6 +17,11 @@ body {
   font-size: var(--fontSize);
   line-height: 1.5;
 }
+container {
+  max-width: 1140px;
+  margin: auto;
+  border: 1px solid red;
+}
 /* header */
 header {
   background-image: url(img/header.jpg);
