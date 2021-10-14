@@ -69,6 +69,7 @@ footer p {
   text-decoration: none;
   width: 250px;
   display: inline-block;
+  cursor: pointer;
 }
 .linkovi a:hover {
   color: var(--accents);
